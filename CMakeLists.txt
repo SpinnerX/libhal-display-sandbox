@@ -32,6 +32,7 @@ find_package(libhal-$ENV{LIBHAL_PLATFORM_LIBRARY} REQUIRED CONFIG)
 find_package(libhal-util REQUIRED CONFIG)
 
 add_executable(${PROJECT_NAME}
+    src/display_application.cpp
     src/main.cpp
     platforms/$ENV{LIBHAL_PLATFORM}.cpp
 )
